@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+            margin: 30px;
+        }
+
+        .container {
+            max-width: 550px;
+            margin: auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px #cbd5e1;
+        }
+
+        h1 {
+            color: #1e3a8a;
+            font-size: 26px;
+        }
+
+        label {
+            display: block;
+            margin-top: 14px;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 9px;
+            border: 1px solid #94a3b8;
+            border-radius: 4px;
+        }
+
+        .option {
+            margin: 7px 0;
+        }
+
+        .option label {
+            display: inline;
+            margin-left: 5px;
+        }
+
+        button {
+            margin-top: 18px;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button[type="submit"] {
+            background-color: #1d4ed8;
+            color: white;
+        }
+
+        button[type="reset"] {
+            background-color: #e2e8f0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Conference Registration Form</h1>
+
+        <form action="#" method="get">
+
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname"
+                   placeholder="Enter your full name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email"
+                   placeholder="Enter your email address" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age"
+                   min="18" max="99" required>
+
+            <label>Gender:</label>
+            <div class="option">
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+            </div>
+
+            <div class="option">
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+            </div>
+
+            <label for="country">Country of Residence:</label>
+            <select id="country" name="country">
+                <option value="Malaysia">Malaysia</option>
+                <option value="Somalia">Somalia</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label>Areas of Interest:</label>
+
+            <div class="option">
+                <input type="checkbox" id="software" name="interest"
+                       value="Software Development">
+                <label for="software">Software Development</label>
+            </div>
+
+            <div class="option">
+                <input type="checkbox" id="data" name="interest"
+                       value="Data Science">
+                <label for="data">Data Science</label>
+            </div>
+
+            <div class="option">
+                <input type="checkbox" id="cybersecurity" name="interest"
+                       value="Cybersecurity">
+                <label for="cybersecurity">Cybersecurity</label>
+            </div>
+
+            <div class="option">
+                <input type="checkbox" id="ai" name="interest"
+                       value="Artificial Intelligence">
+                <label for="ai">Artificial Intelligence</label>
+            </div>
+
+            <label>Experience Level:</label>
+
+            <div class="option">
+                <input type="radio" id="beginner" name="experience"
+                       value="Beginner">
+                <label for="beginner">Beginner</label>
+            </div>
+
+            <div class="option">
+                <input type="radio" id="intermediate" name="experience"
+                       value="Intermediate">
+                <label for="intermediate">Intermediate</label>
+            </div>
+
+            <div class="option">
+                <input type="radio" id="advanced" name="experience"
+                       value="Advanced">
+                <label for="advanced">Advanced</label>
+            </div>
+
+            <label for="comments">Comments or Questions:</label>
+            <textarea id="comments" name="comments" rows="5"
+                      placeholder="Any comments or questions?"></textarea>
+
+            <button type="submit">Register</button>
+            <button type="reset">Reset</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
