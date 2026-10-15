@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Information</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -19,7 +20,7 @@
 
         table {
             width: 100%;
-            max-width: 850px;
+            max-width: 900px;
             margin: 20px auto;
             border-collapse: collapse;
             background-color: white;
@@ -34,8 +35,29 @@
         th {
             background-color: #dbeafe;
         }
+
+        .photo-cell {
+            width: 180px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .photo-cell img {
+            width: 120px;
+            height: 140px;
+            object-fit: cover;
+            display: block;
+            margin: 10px auto;
+            border: 1px solid #94a3b8;
+            border-radius: 5px;
+        }
+
+        a {
+            color: #1d4ed8;
+        }
     </style>
 </head>
+
 <body>
 
     <h1>My Personal Information</h1>
@@ -44,16 +66,22 @@
         <tr>
             <th>Name</th>
             <td colspan="2">BASHIR AHMED BASHIR</td>
-            <th rowspan="2">Photo<br><br>c:\Users\myonl\OneDrive\Pictures\new one\WhatsApp Image 2026-06-10 at 5.01.02 PM (1).jpeg</th>
+            <th rowspan="2" class="photo-cell">
+                Photo
+                <img src="./myphoto.jpg.jpeg" alt="My Photo">
+            </th>
         </tr>
+
         <tr>
             <th>Date of Birth</th>
             <td colspan="2">01/01/2003</td>
         </tr>
+
         <tr>
             <th>Religion</th>
             <td colspan="3">MUSLIM</td>
         </tr>
+
         <tr>
             <th>Race</th>
             <td colspan="3">SOMALI</td>
@@ -62,16 +90,19 @@
         <tr>
             <th rowspan="4">Address</th>
             <th>Street</th>
-            <td colspan="2">12, Jalan Cempaka 3aman Bunga Cempaka Biru, Parit Raja, 86400, Sri Gading </td>
+            <td colspan="2">12, Jalan Cempaka 3aman Bunga Cempaka Biru, Parit Raja, 86400, Sri Gading</td>
         </tr>
+
         <tr>
             <th>Town</th>
             <td colspan="2">PARITRAJA</td>
         </tr>
+
         <tr>
             <th>District</th>
-            <td colspan="2"> Batu Pahat </td>
+            <td colspan="2">Batu Pahat</td>
         </tr>
+
         <tr>
             <th>State</th>
             <td colspan="2">Johor</td>
@@ -82,14 +113,18 @@
             <th>Mobile Phone</th>
             <td colspan="2">601168507507</td>
         </tr>
+
         <tr>
             <th>Social Media</th>
             <td colspan="2">engkoose</td>
         </tr>
+
         <tr>
             <th>Website</th>
             <td colspan="2">
-                <a href="https://github.com/Bashirkoose">My GitHub</a>
+                <a href="https://github.com/Bashirkoose" target="_blank">
+                    My GitHub
+                </a>
             </td>
         </tr>
 
@@ -100,14 +135,17 @@
                 and Information Technology (FSKTM), UTHM
             </td>
         </tr>
+
         <tr>
             <th>Programming Skills</th>
             <td colspan="3">HTML, Git and GitHub</td>
         </tr>
+
         <tr>
             <th>Hobbies</th>
             <td colspan="3">Playing football</td>
         </tr>
+
         <tr>
             <th>2026 Wishlist</th>
             <td colspan="3">
